@@ -290,6 +290,45 @@ header {
     padding: 20px 45px;
 }
 
+.menu-button {
+    border-radius: 50%;
+    background-color:#384676;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor: pointer;
+    width: 61px;
+    height: 60px;
+}
+
+.menu-button .inner{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.menu-button span {
+    width: 18px;
+    height: 2px;
+    background: white;
+    display: block;
+    z-index: 2;
+}
+
+.menu-button span:nth-child(2) {
+    width: 14px;
+    margin: 6px 0;
+}
+
+@media (min-width:991.9px) {
+    .menu-button {
+        display: none;
+    }
+}
+
 /* =========== INNER WALLPAPER SECTION ============ */
 .inner-wallpaper-section .discounts {
     /* 160 */
@@ -866,7 +905,7 @@ input[type="radio"] {
 @media (max-width:991.9px) {
     .slide {
         width: 700px;
-        height:300px !important;
+        height: 300px !important;
     }
 }
 
@@ -914,8 +953,11 @@ input[type="radio"] {
     transform: scale(0.8);
 }
 
-#prev , #next , #prevBtn , #nextBtn{
-    transition:.3s;
+#prev,
+#next,
+#prevBtn,
+#nextBtn {
+    transition: .3s;
 }
 
 .slide {
